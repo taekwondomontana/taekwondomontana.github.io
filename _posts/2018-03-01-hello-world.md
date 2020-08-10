@@ -6,7 +6,7 @@ description: "'You ought to be ashamed of yourself for asking such a simple ques
 'You did,' said the Mock Turtle."
 picture: blog1.jpg
 
-label_default: "alice" 
+label_default: "alice"
 label_primary: "story"
 label_success: "blog"
 label_info: "personal"
