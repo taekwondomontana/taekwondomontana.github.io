@@ -775,3 +775,12 @@ main .container > .row-flex-columns {
 footer h3 .fa-map-marker {
   margin-right: 4px;
 }
+
+.side-left table {
+  width: 100% !important; /* Force the table to fill its container */
+}
+
+/* Ensure family discount text wraps correctly */
+.family-discount-text {
+  white-space: normal !important;
+}
