@@ -1,0 +1,36 @@
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3><a href="https://goo.gl/maps/76yNTXM4DxJ6ZdJUA"><i class="fa fa-map-marker"></a></i> Contact:</h3>
+        <p class="footer-contact">
+          {{ .Site.Params.company_name }} <br>
+          Phone: <a href="sms:+14062090139">{{ .Site.Params.telephone_number }}</a><br>
+          Email: <a href="mailto:{{ .Site.Params.company_email }}">{{ .Site.Params.company_email }}</a><br>
+          Location: <a href="https://goo.gl/maps/76yNTXM4DxJ6ZdJUA">Heritage Christian School, 4310 Durston Rd, Bozeman, MT</a>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h3><i class="fa fa-external-link"></i> Links</h3>
+        <!-- THE FIX: Using site.GetPage to reliably find the URL -->
+        <p><a href="{{ (.Site.GetPage "about").RelPermalink }}"> About</a></p>
+        <p><a href="{{ (.Site.GetPage "classes").RelPermalink }}"> Classes</a></p>
+        <p><a href="{{ (.Site.GetPage "contact").RelPermalink }}"> Contact</a></p>
+      </div>
+      <div class="col-md-4">
+        <h3><i class="fa fa-heart"></i> Socialize</h3>
+        <div id="social-icons">
+          {{ if .Site.Params.facebook_link }}
+            <a href="{{ .Site.Params.facebook_link }}" class="btn-group facebook">
+              <i class="fa fa-facebook"></i> <div class="fb-like" data-href="https://www.facebook.com/taekwondomontana/" data-width="" data-layout="button" data-action="like" data-size="small" data-share="true"></div>
+            </a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright text center">
+    <p>&copy; Copyright {{ now.Format "2006" }}, {{ .Site.Params.company_name }} <br></p>
+  </div>
+</footer>

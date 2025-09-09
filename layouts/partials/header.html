@@ -1,0 +1,34 @@
+<!-- Header -->
+<nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
+  <div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand wow fadeInDownBig" href="/"><img class="office-logo" src="/assets/img/slider/cropped-patch.gif" alt="Patch"></a>
+  </div>
+  <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav pull-right">
+      <li class="{{ if .IsHome }}active{{ end }}">
+        <a href="/">Home</a>
+      </li>
+      <!-- THE FIX: Using site.GetPage to reliably find the URL -->
+      <li class="{{ if eq .RelPermalink (.Site.GetPage "about").RelPermalink }}active{{ end }}">
+        <a href="{{ (.Site.GetPage "about").RelPermalink }}">About</a>
+      </li>
+      <li class="{{ if eq .RelPermalink (.Site.GetPage "classes").RelPermalink }}active{{ end }}">
+        <a href="{{ (.Site.GetPage "classes").RelPermalink }}">Classes</a>
+      </li>
+      <li class="{{ if eq .RelPermalink (.Site.GetPage "contact").RelPermalink }}active{{ end }}">
+        <a href="{{ (.Site.GetPage "contact").RelPermalink }}"><span>Contact</span></a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
+<!-- End Header -->
