@@ -756,3 +756,20 @@ main .container > .row-flex-columns {
   display: flex;
   flex-wrap: wrap;
 }
+
+/* FIX: Make mobile menu overlap content instead of pushing it down */
+@media (max-width: 767px) {
+  .navbar-default .navbar-collapse {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 1001;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e7e7e7;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+}
+
+footer h3 .fa-map-marker {
+  margin-right: 4px;
+}
