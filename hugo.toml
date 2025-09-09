@@ -1,0 +1,15 @@
+baseURL = "http://taekwondomontana.com/"
+languageCode = "en-us"
+title = "Kim's Taekwondo Bozeman"
+# This tells Hugo to generate clean URLs like /about/ instead of /about.html
+uglyURLs = false
+
+# All your custom variables from _config.yml go into the [params] section.
+[params]
+  description = "Kim's Taekwondo School of Montana. Located in Bozeman, MT."
+  company_name = "Kim's Taekwondo School of Montana"
+  address_line = "Heritage Christian School, 4310 Durston Rd, Bozeman, MT 59718"
+  telephone_number = "1.406.209.0139"
+  company_email = "kimstaekwondomontana@gmail.com"
+  google_map = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4404.152214706738!2d-111.10075401767843!3d45.68510108449176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x534544224fe14cff%3A0xdd0261bda764d965!2sKim's%20Tae%20Kwon-Do%20School!5e0!3m2!1sen!2sus!4v1757367059883!5m2!1sen!2sus"
+  facebook_link = "https://www.facebook.com/taekwondomontana/"

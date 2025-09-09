@@ -1,0 +1,31 @@
+{{ define "main" }}
+<!-- Main Container -->
+<div id="banners"></div>
+<div class="container">
+  <!-- We range over pages in the "posts" section -->
+  {{ range where .Site.RegularPages "Section" "posts" }}
+  <div class="blog-post">
+      <h1 class="blog-title">
+        <i class="fa fa-file-text"></i>
+        {{ .Title }}
+      </h1>
+      <br>
+      <img src="/assets/img/slider/{{ .Params.picture }}" alt="Feature-img" align="right" width="100%" class="blog-image">
+      <br>
+      <p>{{ .Description }}</p>
+      <!-- Hugo's date formatting uses a reference date: Mon Jan 2 15:04:05 MST 2006 -->
+      <span class="badge">{{ .Date.Format "January 2, 2006" }}</span>
+      <div class="pull-right">
+        <!-- Ranging over the "tags" taxonomy from the post's front matter -->
+        {{ with .Params.tags }}
+          {{ range . }}
+            <span class="label label-primary">{{ . | humanize }}</span>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+    <hr>
+  {{ end }}
+</div>
+<!--End Main Container -->
+{{ end }}

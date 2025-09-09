@@ -1,0 +1,28 @@
+{{- define "main" -}}
+<div class="container">
+  <!-- .Pages will contain the pages in this section (e.g., all posts) -->
+  {{ range .Pages }}
+  <div class="blog-post">
+      <h1 class="blog-title">
+        <i class="fa fa-file-text"></i>
+        {{ .Title }}
+      </h1>
+      <br>
+      <!-- .Params holds custom front matter variables -->
+      <img src="/assets/img/slider/{{ .Params.picture }}" alt="Feature-img" ...>
+      <br>
+      <p>{{ .Description }}</p>
+      <span class="badge">{{ .Date.Format "January 2, 2006" }}</span>
+      <div class="pull-right">
+        <!-- In Hugo, you just range over the tags -->
+        {{ with .Params.tags }}
+          {{ range . }}
+            <span class="label label-primary">{{ . }}</span>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+    <hr>
+  {{ end }}
+</div>
+{{- end -}}
