@@ -225,10 +225,6 @@ address {
 * Navbar
 * ==========================================================================
 */
-.active{
-  background:#74B9B9 !important;
-  color: white;
-}
 .navbar {
   font-weight: bold;
   padding-top: 15px;
@@ -790,6 +786,8 @@ footer h3 .fa-map-marker {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #fff !important;
-  background-color: #5cb85c !important;
-  border-color: #4cae4c !important;
+  background-color: #74B9B9 !important;
+  border-color: #74B9B9 !important;
+  background-image: none !important;
+  box-shadow: none !important;
 }
