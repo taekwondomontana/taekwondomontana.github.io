@@ -784,3 +784,12 @@ footer h3 .fa-map-marker {
 .family-discount-text {
   white-space: normal !important;
 }
+
+/* FIX: Restore solid green highlight on active navbar links after BS3 upgrade */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff !important;
+  background-color: #5cb85c !important;
+  border-color: #4cae4c !important;
+}
