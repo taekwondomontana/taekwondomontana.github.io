@@ -1,4 +1,4 @@
-baseURL = "http://taekwondomontana.com/"
+baseURL = "https://taekwondomontana.com/"
 languageCode = "en-us"
 title = "Kim's Taekwondo Bozeman"
 # This tells Hugo to generate clean URLs like /about/ instead of /about.html
