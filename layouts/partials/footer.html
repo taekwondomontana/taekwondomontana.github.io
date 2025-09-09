@@ -23,8 +23,15 @@
         <div id="social-icons">
           {{ if .Site.Params.facebook_link }}
             <a href="{{ .Site.Params.facebook_link }}" class="btn-group facebook">
-              <i class="fa fa-facebook"></i> <div class="fb-like" data-href="https://www.facebook.com/taekwondomontana/" data-width="" data-layout="button" data-action="like" data-size="small" data-share="true"></div>
+              <i class="fa fa-facebook"></i>
             </a>
+            <div class="fb-page"
+                 data-href="{{ .Site.Params.facebook_link }}"
+                 data-tabs=""
+                 data-small-header="true"
+                 data-adapt-container-width="true"
+                 data-hide-cover="false"
+                 data-show-facepile="false"></div>
           {{ end }}
         </div>
       </div>
