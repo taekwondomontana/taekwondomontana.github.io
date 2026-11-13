@@ -1,5 +1,5 @@
 baseURL = "https://taekwondomontana.com/"
-languageCode = "en-us"
+locale = "en-us"
 title = "Kim's Taekwondo Bozeman"
 # This tells Hugo to generate clean URLs like /about/ instead of /about.html
 uglyURLs = false
@@ -13,3 +13,7 @@ uglyURLs = false
   company_email = "kimstaekwondomontana@gmail.com"
   google_map = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4404.152214706738!2d-111.10075401767843!3d45.68510108449176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x534544224fe14cff%3A0xdd0261bda764d965!2sKim's%20Tae%20Kwon-Do%20School!5e0!3m2!1sen!2sus!4v1757367059883!5m2!1sen!2sus"
   facebook_link = "https://www.facebook.com/taekwondomontana/"
+
+# Hugo 0.169+ blocks .html content files by default; this site's pages are .html.
+[security]
+  allowContent = ['^text/html$']
